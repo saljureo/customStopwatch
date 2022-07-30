@@ -1,5 +1,31 @@
-<Button>:
-	text: 'Button'
-	size_hint:  (1, 1)
-	pos_hint: {'center_x': .5, 'center_y': .5}
+MainLayout:
+
+<MainLayout>
+	orientation: "vertical"
+	GridLayout:
+	cols:3
+	Label:
+		text: "00:00"
+	BoxLayout:
+		orientation: "vertical"
+		BoxLayout:
+			Button:
+				text: "Start/Lap Work"
+			Button:
+				text: "Start/Lap Pause"
+		Button:
+			text: "See laps"
+		BoxLayout:
+			Button:
+				text: "Pause"
+			Button:
+				text: "Stop"
+
+
+	Button:
+		text: "-"
+	Button:
+		text: "Hola"
+		
+		
 	

@@ -1,4 +1,5 @@
 from kivy.app import App
+from kivy.uix.gridlayout import GridLayout
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.widget import Widget
 from kivy.uix.button import Button
@@ -7,7 +8,12 @@ from kivy.clock import Clock
 
 import time
 
-class customStopwatchApp(App):
+class MainLayout(BoxLayout):
+    pass
+
+
+"""
+class program(GridLayout):
     def __init__(self):
         super().__init__()
         self.current_counter = time.perf_counter_ns()
@@ -24,6 +30,7 @@ class customStopwatchApp(App):
         if number < 10:
             return "0" + str(number)
         return str(number)
+        
     def build(self):
         # Main layout
         main_layout = BoxLayout(orientation="vertical")
@@ -82,7 +89,10 @@ class customStopwatchApp(App):
         main_layout.add_widget(addStopwatch_button)
 
         return main_layout
+"""
 
+class CustomStopwatchApp(App):
+    pass
 
-if __name__ == "__main__":
-    customStopwatchApp().run()
+#if __name__ == "__main__":
+CustomStopwatchApp().run()
